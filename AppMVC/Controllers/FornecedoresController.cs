@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AppMVC.Data;
 using AppMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AppMVC.Controllers
 {
+    [Authorize]
     public class FornecedoresController : Controller
     {
         private readonly ApplicationDbContext _context;
